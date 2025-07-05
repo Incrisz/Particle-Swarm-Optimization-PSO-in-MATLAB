@@ -20,27 +20,12 @@ It was introduced by James Kennedy and Russell Eberhart in 1995.
 
 1. **Velocity Update:**
 
-    \[
-    v_{i}^{(t+1)} = w \cdot v_{i}^{(t)} + c_1 \cdot r_1 \cdot (pBest_{i} - x_{i}^{(t)}) + c_2 \cdot r_2 \cdot (gBest - x_{i}^{(t)})
-    \]
-
-    - \( v_{i}^{(t+1)} \): New velocity of particle \(i\) at iteration \(t+1\)
-    - \( w \): Inertia weight (controls exploration vs. exploitation)
-    - \( c_1 \): Cognitive (personal) coefficient
-    - \( c_2 \): Social (global) coefficient
-    - \( r_1, r_2 \): Random values in [0, 1]
-    - \( pBest_{i} \): Best position found by particle \(i\)
-    - \( gBest \): Best position found by the swarm
-    - \( x_{i}^{(t)} \): Current position of particle \(i\)
+![Description](udemy1.png)
 
 2. **Position Update:**
 
-    \[
-    x_{i}^{(t+1)} = x_{i}^{(t)} + v_{i}^{(t+1)}
-    \]
+![Description](udemy2.png)
 
-    - \( x_{i}^{(t+1)} \): Updated position of particle \(i\)
-    - \( v_{i}^{(t+1)} \): Updated velocity
 
 ## Implementation Details
 
